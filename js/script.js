@@ -6,6 +6,8 @@ document.addEventListener("scroll", function(){
     var distanciaContenedorNosotros = contenedorNosotros.getBoundingClientRect().top
     visualizarBarraNavegacion(distanciaContenedorNosotros);
     activarAnimacion(distanciaContenedorNosotros);
+
+    console.log(distanciaContenedorNosotros);
 });
 //===================- RUTINA VISUALIZACIÓN MENU RESPONSIVE -======================
 var estatus = false;
@@ -30,7 +32,7 @@ function visualizarBarraNavegacion(visualBarNavegacion){
         }else if(visualBarNavegacion < 350 && visualBarNavegacion > 250){
             barraNavegacion.style.opacity = 0.2;
             barraNavegacion.style.visibility = "";
-            }else if(visualBarNavegacion < 250 && visualBarNavegacion > 200){
+            }else if(visualBarNavegacion < 250 && visualBarNavegacion > 180){
                 barraNavegacion.style.opacity = 0.4;
                 }else if(visualBarNavegacion < 200 && visualBarNavegacion > 150){
                     barraNavegacion.style.opacity = 0.6;
@@ -49,20 +51,24 @@ var tituloPrimarioNosotros = document.querySelector(".titulo-principal-1-1");
 var tituloPrimarioEntrenadores = document.querySelector(".titulo-principal-1-2");
 var tituloPrimarioHorarios = document.querySelector(".titulo-principal-1-3");
 var tituloPrimarioContacto = document.querySelector(".titulo-principal-1-4");
+var tituloPrimarioHobbies = document.querySelector(".titulo-principal-1-5");
 
 function activarAnimacion(distanciaContenedorNosotros){
     tituloPrimarioNosotros.classList.remove("animacion-izquierda");
     tituloPrimarioHorarios.classList.remove("animacion-izquierda");
     tituloPrimarioEntrenadores.classList.remove("animacion-derecha");
     tituloPrimarioContacto.classList.remove("animacion-derecha");
+    tituloPrimarioHobbies.classList.remove("animacion-izquierda");
 
-    if(distanciaContenedorNosotros <= 700){
+    if(distanciaContenedorNosotros <= 840){
         tituloPrimarioNosotros.classList.add("animacion-izquierda");
         }if(distanciaContenedorNosotros <= -900){
             tituloPrimarioHorarios.classList.add("animacion-izquierda");
-            }if(distanciaContenedorNosotros <= -200){
-                tituloPrimarioEntrenadores.classList.add("animacion-derecha");
-                }if(distanciaContenedorNosotros <= -1680){
-                    tituloPrimarioContacto.classList.add("animacion-derecha");
-                    }
+            }if(distanciaContenedorNosotros <= -615){
+                tituloPrimarioHobbies.classList.add("animacion-izquierda");
+                }if(distanciaContenedorNosotros <= -150){
+                    tituloPrimarioEntrenadores.classList.add("animacion-derecha");
+                    }if(distanciaContenedorNosotros <= -1680){
+                        tituloPrimarioContacto.classList.add("animacion-derecha");
+                        }
 }

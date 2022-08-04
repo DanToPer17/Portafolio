@@ -1,6 +1,6 @@
 /*=====================- BANNER PRINCIPAL HOME -===============================*/
 .contenedor-banner-principal{
-    background-image: url(../img/una-taza-de-javascript.png);
+    background-image: url(../img/banner/banner.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -19,9 +19,9 @@
         padding: 10px 5% 10px;
     }
         .text-typing h1{
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Roboto Mono', monospace;
             color: #fff;
-            width: 390px;
+            width: 395px;
             animation: typing 1.5s steps(20),blink .5s infinite alternate;
             white-space: nowrap;
             overflow: hidden;
@@ -37,7 +37,7 @@
         }
         @keyframes blink{
             50%{
-                border-color: #FE3C00;
+                border-color: #3FAFAF;
             }
         }
         .nombre-organizacion{
@@ -49,22 +49,22 @@
         }
             #nombre-Principal{
                 color: #fff;
-                -webkit-text-stroke: 0.5px #FE3C00;
+                -webkit-text-stroke: 0.5px #3FAFAF;
             }
             #apellido-principal{
-                color: #FE3C00;
+                color: #3FAFAF;
                 -webkit-text-stroke: 0.5px black;
             }   
             #apellido-secundario{
                 color: #fff;
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Roboto Mono', monospace;
                 font-size: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
             }
         .mouse{
             display: flex;
             width: 25px;
             height: 50px;
-            border: 2.5px solid #FE3C00;
+            border: 2.5px solid #3FAFAF;
             border-radius: 20px;
             margin: 0 50% 0 47%;
             position: absolute;
@@ -99,9 +99,9 @@
             animation: difuminar 3s;
             width:  calc(35% - 1rem);
             place-items: center;
+            border-radius: solid;
         }
         .img-foto-banner{
-            border-radius: 50%;
             margin: 50px;
         }
             @keyframes difuminar {
